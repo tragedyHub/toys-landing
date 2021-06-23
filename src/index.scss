@@ -1,0 +1,15 @@
+@import "./fonts.scss";
+
+*, a, li, div {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: TTHoves-Regular;
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+}
