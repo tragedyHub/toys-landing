@@ -4,6 +4,19 @@ import main_cont_image from "../../images/main_cont.png";
 import creator_logo from "../../images/creator_logo.png";
 import truck from "../../images/truck.png";
 import arrow from "../../images/truck_arrow.png";
+import header_logo from "../../images/header_logo.svg";
+import tips_img1 from "../../images/tips_img1.svg";
+import tips_img2 from "../../images/tips_img2.svg";
+import tips_img3 from "../../images/tips_img3.svg";
+import types_img1 from "../../images/types_img1.png";
+import types_img2 from "../../images/types_img2.png";
+import types_img3 from "../../images/types_img3.png";
+import types_img4 from "../../images/types_img4.png";
+import how_image1 from "../../images/how_image1.svg";
+import how_image2 from "../../images/how_image2.png";
+import how_image3 from "../../images/how_image3.svg";
+import how_image4 from "../../images/how_image4.png";
+import how_image5 from "../../images/how_image5.svg";
 
 const Home = () => {
   return (
@@ -12,14 +25,16 @@ const Home = () => {
         <div className="container">
           <div className="cont">
             <header className="header">
-              <a href="" className="logo">
-                LogoType
-              </a>
+              <div className="logo">
+                <img src={header_logo} className="logo__img" />
+                <a href="" className="logo__link">
+                  LogoType
+                </a>
+              </div>
               <nav className="header_menu">
-                <a className="header_menu_link">О нас</a>
-                <a className="header_menu_link">Каталог игрушек</a>
-                <a className="header_menu_link">Тарифы</a>
-                <a className="header_menu_link">Контакты</a>
+                <a className="header_menu_link">О проекте</a>
+                <a className="header_menu_link">Посмотреть игрушек</a>
+                <a className="header_menu_link">Блог</a>
               </nav>
               <div className="icon_menu">
                 <svg
@@ -58,7 +73,7 @@ const Home = () => {
               </h1>
               <div className="btns">
                 <button className="offer_btn">
-                  Получить баллы
+                  Начать пользоваться
                   <svg width="13" height="20" viewBox="0 0 13 20" fill="none">
                     <path
                       d="M12.049 9.22487C12.5399 9.62502 12.5399 10.375 12.049 10.7751L1.8818 19.0623C1.22855 19.5947 0.250001 19.1299 0.250001 18.2871L0.250002 1.71288C0.250002 0.870118 1.22855 0.405292 1.8818 0.937746L12.049 9.22487Z"
@@ -81,6 +96,8 @@ const Home = () => {
             <h1 className="how_use_title">Как пользоваться сервисом?</h1>
             <div className="cards">
               <div className="card">
+                <img src={how_image2} className="arrow1"/>
+                <img src={how_image1} className="bottom_image"/>
                 <h1 className="card_counter">01</h1>
                 <div className="card_cont">
                   <h1 className="card_title">Зарегистрируйтесь</h1>
@@ -91,6 +108,8 @@ const Home = () => {
                 </div>
               </div>
               <div className="card">
+                <img src={how_image3} className="bottom_image2"/>
+                <img src={how_image4} className="arrow2"/>
                 <h1 className="card_counter">02</h1>
                 <div className="card_cont">
                   <h1 className="card_title">Выберете тариф</h1>
@@ -101,6 +120,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="card">
+              <img src={how_image5} className="bottom_image3"/>
                 <h1 className="card_counter">03</h1>
                 <div className="card_cont">
                   <h1 className="card_title">Меняйте баллы на игрушки</h1>
@@ -114,29 +134,59 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="creators">
+      <section className="types">
         <div className="container">
           <div className="cont">
-            <h1 className="creators_title">Производители</h1>
+            <h1 className="creators_title">Виды игрушек</h1>
             <div className="cards">
               <div className="card">
-                <img src={creator_logo} className="card_logo" />
+                <img src={types_img1} className="card_logo" />
+                <p>Для развития моторики</p>
               </div>
               <div className="card">
-                <img src={creator_logo} className="card_logo" />
+                <img src={types_img2} className="card_logo" />
+                <p>Деревянные игрушки</p>
               </div>
               <div className="card">
-                <img src={creator_logo} className="card_logo" />
+                <img src={types_img3} className="card_logo" />
+                <p>Для развития логики</p>
               </div>
               <div className="card">
-                <img src={creator_logo} className="card_logo" />
+                <img src={types_img4} className="card_logo" />
+                <p>Для изучения цветов</p>
               </div>
             </div>
-            <div className="slider">
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
-              <div className="dot"></div>
+          </div>
+        </div>
+      </section>
+      <section className="tips">
+        <div className="container">
+          <div className="cont">
+            <div className="cards">
+              <div className="card">
+                <img src={tips_img1} className="card_img" />
+                <h1 className="card_title">Разумное потребление</h1>
+                <p className="card_description">
+                  Ребенок потребляет разумно. Происходит обмен вместо покупки
+                  новых и хранения старых
+                </p>
+              </div>
+              <div className="card">
+                <img src={tips_img2} className="card_img" />
+                <h1 className="card_title">Экология</h1>
+                <p className="card_description">
+                  Сохраняем окружающую среду от пластика и лишних отходов в
+                  несколько раз.
+                </p>
+              </div>
+              <div className="card">
+                <img src={tips_img3} className="card_img" />
+                <h1 className="card_title">Задачи</h1>
+                <p className="card_description">
+                  Легко найти подходящую под ваши задачи игрушку. Развивайте
+                  логику, память или мелкую моторику.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -146,326 +196,80 @@ const Home = () => {
           <div className="cont">
             <div className="top">
               <h1 className="tarif_title">Тарифы</h1>
-              <h1 className="date_title">За месяц</h1>
-              <svg width="24" height="14" viewBox="0 0 24 14" fill="none">
-                <path
-                  d="M10.9393 13.0607C11.5251 13.6464 12.4749 13.6464 13.0607 13.0607L22.6066 3.51472C23.1924 2.92893 23.1924 1.97919 22.6066 1.3934C22.0208 0.807612 21.0711 0.807612 20.4853 1.3934L12 9.87868L3.51472 1.3934C2.92893 0.807611 1.97919 0.807611 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L10.9393 13.0607ZM10.5 11L10.5 12L13.5 12L13.5 11L10.5 11Z"
-                  fill="#BB6BD9"
-                />
-              </svg>
             </div>
             <div className="cards">
               <div className="card">
-                <h1 className="card_title">Малыш</h1>
-                <p className="card_desc">
-                  Если нужны простые игрушки в небольшом количестве
-                </p>
-                <button className="card_btn">1000 руб./мес.</button>
-                <h1 className="cost_title">80 токенов</h1>
-                <button className="cost_btn">Выбрать</button>
+                <div className="card_cont">
+                  <h1 className="card_title">Малыш</h1>
+                  <p className="card_desc">
+                    Если нужны простые игрушки в небольшом количестве
+                  </p>
+                  <button className="card_btn">1000 руб./мес.</button>
+                  <h1 className="cost_title">80 токенов</h1>
+                  <button className="cost_btn">Выбрать</button>
+                </div>
+                <h1 className="tarif_duraction">
+                  1 месяц
+                </h1>
               </div>
               <div className="card">
-                <h1 className="card_title">На ногах</h1>
-                <p className="card_desc">
-                  Если нужны простые игрушки в небольшом количестве
-                </p>
-                <button className="card_btn">1000 руб./мес.</button>
-                <h1 className="cost_title">80 токенов</h1>
-                <button className="cost_btn">Выбрать</button>
-              </div>
-              <div className="card">
-                <h1 className="card_title">Активный</h1>
-                <p className="card_desc">
-                  Если нужны простые игрушки в небольшом количестве
-                </p>
-                <button className="card_btn">1000 руб./мес.</button>
-                <h1 className="cost_title">80 токенов</h1>
-                <button className="cost_btn">Выбрать</button>
-              </div>
-              <div className="card">
-                <h1 className="card_title">Уже большой</h1>
-                <p className="card_desc">
-                  Если нужны простые игрушки в небольшом количестве
-                </p>
-                <button className="card_btn">1000 руб./мес.</button>
-                <h1 className="cost_title">80 токенов</h1>
-                <button className="cost_btn">Выбрать</button>
+                <div className="card_cont">
+                  <h1 className="card_title">Активный</h1>
+                  <p className="card_desc">
+                    Если нужны простые игрушки в небольшом количестве
+                  </p>
+                  <button className="card_btn">1000 руб./мес.</button>
+                  <h1 className="cost_title">140 токенов</h1>
+                  <button className="cost_btn">Выбрать</button>
+                </div>
+                <h1 className="tarif_duraction">
+                  3 месяца
+                </h1>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="not_full">
-        <div className="container">
-          <div className="cont">
-            <h1 className="not_full_title">
-              Если не использовали тариф полностью:
-            </h1>
-            <div className="row">
-              <div className="balance">
-                <h1 className="balance_title">Balance</h1>
-                <p className="balance_money">80 token</p>
-              </div>
-              <div className="line"></div>
-              <img src={truck} className="truck" />
-              <img src={arrow} className="arrow" />
-              <div className="next_balance">
-                <h1 className="count">90</h1>
-                <h1 className="next_text">Баланс в следующем месяце</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="feed_back">
-        <div className="container">
-          <div className="cont">
-            <h1 className="feed_back_title">Отзывы</h1>
-            <div className="cards">
-              <div className="card">
-                <div className="top">
-                  <h1 className="card_title">Иван Иванов</h1>
-                  <div className="stars">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <p className="card_desc">
-                  Регистрация аккаунта для доступа к каталогам и платежной
-                  системе занимает не более 5-ти минут!
-                </p>
-              </div>
-              <div className="card">
-                <div className="top">
-                  <h1 className="card_title">Иван Иванов</h1>
-                  <div className="stars">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <p className="card_desc">
-                  Регистрация аккаунта для доступа к каталогам и платежной
-                  системе занимает не более 5-ти минут!
-                </p>
-              </div>
-              <div className="card">
-                <div className="top">
-                  <h1 className="card_title">Иван Иванов</h1>
-                  <div className="stars">
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                    <svg
-                      width="22"
-                      height="20"
-                      viewBox="0 0 22 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.0866 1.04906C10.439 0.258571 11.561 0.258571 11.9134 1.04906L14.0803 5.91034C14.2256 6.23637 14.5337 6.46022 14.8887 6.49768L20.1817 7.05632C21.0423 7.14717 21.3891 8.21427 20.7462 8.79365L16.7924 12.3567C16.5273 12.5957 16.4096 12.9579 16.4836 13.3071L17.5879 18.5136C17.7675 19.3602 16.8598 20.0198 16.1101 19.5873L11.4996 16.9282C11.1904 16.7498 10.8096 16.7498 10.5004 16.9282L5.88991 19.5873C5.14021 20.0198 4.23248 19.3602 4.41205 18.5136L5.51637 13.3071C5.59043 12.9579 5.47275 12.5957 5.20759 12.3567L1.25385 8.79365C0.610933 8.21427 0.957655 7.14717 1.81834 7.05632L7.11131 6.49768C7.46629 6.46022 7.77439 6.23637 7.91971 5.91034L10.0866 1.04906Z"
-                        fill="#FEF05E"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <p className="card_desc">
-                  Регистрация аккаунта для доступа к каталогам и платежной
-                  системе занимает не более 5-ти минут!
-                </p>
-              </div>
-            </div>
-            <button className="btn">Еще</button>
           </div>
         </div>
       </section>
       <footer className="footer">
-          <div className="container">
-              <div className="cont">
-                  <div className="logo">LogoType</div>
-                  <div className="column">
-                      <h1 className="column_title">О нас</h1>
-                      <a href="#" className="column_link">Как пользоваться</a>
-                      <a href="#" className="column_link">О компании</a>
-                      <a href="#" className="column_link">Отзывы</a>
-                  </div>
-                  <div className="column">
-                      <h1 className="column_title">Каталог</h1>
-                      <a href="#" className="column_link">0-3</a>
-                      <a href="#" className="column_link">3-6</a>
-                      <a href="#" className="column_link">6-9</a>
-                  </div>
-                  <div className="column">
-                      <h1 className="column_title">Тарифы</h1>
-                  </div>
-                  <div className="column">
-                      <h1 className="column_title">Контакты</h1>
-                      <a href="#" className="column_link">Реквизиты</a>
-                      <a href="#" className="column_link">Помощь</a>
-                  </div>
-              </div>
+        <div className="container">
+          <div className="cont">
+            <div className="logo">LogoType</div>
+            <div className="column">
+              <h1 className="column_title">О нас</h1>
+              <a href="#" className="column_link">
+                Как пользоваться
+              </a>
+              <a href="#" className="column_link">
+                Отзывы
+              </a>
+              <a href="#" className="column_link">
+                Блог
+              </a>
+            </div>
+            <div className="column">
+              <h1 className="column_title">Используй Tidi</h1>
+              <a href="#" className="column_link">
+                Каталог
+              </a>
+              <a href="#" className="column_link">
+                Тарифы
+              </a>
+            </div>
+
+            <div className="column">
+              <h1 className="column_title">Полезная информация</h1>
+              <a href="#" className="column_link">
+                Соглашения
+              </a>
+              <a href="#" className="column_link">
+                Контакты
+              </a>
+              <a href="#" className="column_link">
+                FAQ + базе знаний
+              </a>
+            </div>
           </div>
+        </div>
       </footer>
     </div>
   );
