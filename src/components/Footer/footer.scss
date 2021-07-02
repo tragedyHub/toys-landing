@@ -1,0 +1,38 @@
+$blue: #75e1d2;
+.footer {
+  background: $blue;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  padding-top: 1.875em;
+  padding-bottom: 2.5em;
+
+  .cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    color: #fff;
+  }
+
+  .column_title {
+    color: #fff;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+  }
+
+  .column_link {
+    font-weight: 100;
+    color: #fff;
+  }
+
+  .column_link:not(:last-child) {
+    margin-bottom: 1.2em;
+  }
+}

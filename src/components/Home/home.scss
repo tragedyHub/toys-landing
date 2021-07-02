@@ -1,541 +1,497 @@
 @import "../../fonts.scss";
 
-$blue: #75E1D2;
+$blue: #75e1d2;
 $black: #333;
-$yellow: #F2C94C;
-$purple: #BB6BD9;
+$yellow: #f2c94c;
+$purple: #bb6bd9;
 
-.home {}
+.home {
+}
 
 .main_cont {
-    position: relative;
-    background: $blue;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 45px;
-    height: 20em;
+  position: relative;
+  background: $blue;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  height: 20em;
 
-    .container {
-        height: 100%;
+  .container {
+    height: 100%;
+  }
+
+  .cont {
+    width: 100%;
+  }
+
+  .image {
+    position: absolute;
+    bottom: -4.8em;
+    right: 16em;
+  }
+
+  .offer {
+    margin-top: 2.5em;
+
+    .btns {
+      display: flex;
+      align-items: center;
     }
-
-    .cont {
-        width: 100%;
-    }
-
-    .image {
-        position: absolute;
-        bottom: -4.8em;
-        right: 16em;
-    }
-
-    .offer {
-        margin-top: 2.5em;
-
-        .btns {
-            display: flex;
-            align-items: center;
-        }
-    }
+  }
 }
 
 .header {
-    height: 3.2em;
-    width: 100%;
+  height: 3.2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
 
-    .logo {
-        display: flex;
-        align-items: center;
-    }
+  .logo__img {
+    margin-right: 1.875em;
+  }
 
-    .logo__img {
-        margin-right: 1.875em;
-    }
+  .logo__link {
+    font-size: 1.25em;
+    color: #fff;
+  }
 
-    .logo__link {
-        font-size: 1.25em;
-        color: #fff;
+  .icon_menu {
+    svg:not(:last-child) {
+      margin-right: 1.5em;
     }
-
-    .icon_menu {
-        svg:not(:last-child) {
-            margin-right: 1.5em;
-        }
-    }
+  }
 }
 
-
 .header_menu {
-    display: flex;
+  display: flex;
 }
 
 .header_menu_link {
-    font-weight: 400;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 .header_menu_link:not(:last-child) {
-    margin-right: 3em;
+  margin-right: 3em;
 }
 
 .offer_title {
-    color: #fff;
-    font-size: 2em;
-    margin-bottom: 1.5em;
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 1.5em;
 }
 
 .offer_btn {
-    background: #fff;
-    color: $blue;
-    padding: 0.75em 1.6em;
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    font-size: 0.83em;
+  background: #fff;
+  color: $blue;
+  padding: 0.75em 1.6em;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.83em;
 
-    svg {
-        margin-left: 0.6em;
-    }
+  svg {
+    margin-left: 0.6em;
+  }
 }
 
 .offer_register_text {
-    margin-left: 0.8em;
-    font-size: 0.66em;
-    color: #fff;
+  margin-left: 0.8em;
+  font-size: 0.66em;
+  color: #fff;
 }
 
-
 .how_use {
-    background: #fff;
-    padding: 2.5em 0;
+  background: #fff;
+  padding: 2.5em 0;
 
-    .cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .card {
-        position: relative;
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 7.5em;
-        background: #F9F9F9;
-        border-radius: 21.2517px;
-        padding: 1.5em 1.5em 1.5em 7.5em;
-    }
+  .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 7.5em;
+    background: #f9f9f9;
+    border-radius: 21.2517px;
+    padding: 1.5em 1.5em 1.5em 7.5em;
+  }
 
-    .bottom_image {
-        position: absolute;
-        left: 0.4em;
-        bottom: -0.7em;
-        width: 3.75em;
-        height: 3.45em;
-    }
-    .bottom_image2 {
-        position: absolute;
-        z-index: 999;
-        bottom: -0.5em;
-        left: 1em;
-    }
-    .bottom_image3 {
-        position: absolute;
-        z-index: 999;   
-        left: -1em;
-        bottom: -1.5em;
-    }
-    .arrow2 {
-        position: absolute;
-        bottom: -8em;
-    }
-    .arrow1 {
-        position: absolute;
-        width: 11.5em;
-        height: 2em;
-        top: -2.8em;
-        right: -8em
-    }
-    .card:nth-child(n+3) {
-        margin: 3em auto 0;
-        width: 45%;
-    }
+  .bottom_image {
+    position: absolute;
+    left: 0.4em;
+    bottom: -0.7em;
+    width: 3.75em;
+    height: 3.45em;
+  }
+  .bottom_image2 {
+    position: absolute;
+    z-index: 999;
+    bottom: -0.5em;
+    left: 1em;
+  }
+  .bottom_image3 {
+    position: absolute;
+    z-index: 999;
+    left: -1em;
+    bottom: -1.5em;
+  }
+  .arrow2 {
+    position: absolute;
+    bottom: -8em;
+  }
+  .arrow1 {
+    position: absolute;
+    width: 11.5em;
+    height: 2em;
+    top: -2.8em;
+    right: -8em;
+  }
+  .card:nth-child(n + 3) {
+    margin: 3em auto 0;
+    width: 45%;
+  }
 
-    .card_counter {
-        left: -0.3em;
-        bottom: .35em;
-        margin-right: 1.5em;
-        font-size: 6.8em;
-        font-weight: bold;
-        position: absolute;
-        z-index: 1;
-        color: $blue;
-    }
+  .card_counter {
+    left: -0.3em;
+    bottom: 0.35em;
+    margin-right: 1.5em;
+    font-size: 6.8em;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    color: $blue;
+  }
 
-    .card_cont {}
+  .card_cont {
+  }
 
-    .card_title {
-        font-size: 1.1em;
-        margin-bottom: 0.4em;
-        color: $black;
-    }
+  .card_title {
+    font-size: 1.1em;
+    margin-bottom: 0.4em;
+    color: $black;
+  }
 
-    .card_desc {
-        color: #BDBDBD;
-        font-size: 0.8em;
-    }
+  .card_desc {
+    color: #bdbdbd;
+    font-size: 0.8em;
+  }
 }
 
 .how_use_title {
-    color: $black;
-    font-size: 1.875em;
-    margin-bottom: 4.58em;
+  color: $black;
+  font-size: 1.875em;
+  margin-bottom: 4.58em;
 }
 
 .types {
-    padding: 1.875em 0;
-    background: $yellow;
+  padding: 1.875em 0;
+  background: $yellow;
 
-    .cont {
-        display: flex;
-        flex-direction: column;
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.2em;
+  }
+  img {
+    width: 8.9em;
+    height: 8.3em;
+  }
+
+  .card {
+    background: #fff;
+    padding: 0.7em 1.06em;
+    border-radius: 12px;
+    text-align: center;
+
+    p {
+      color: $black;
+      font-size: 1.08em;
+      width: 232px;
+      font-weight: medium;
     }
-
-    .cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 1.2em;
-    }
-    img {
-        width: 8.9em;
-        height: 8.3em;
-    }
-
-    .card {
-        background: #fff;
-        padding: 0.7em 1.06em;
-        border-radius: 12px;
-        text-align: center;
-
-        p {
-            color: $black;
-            font-size: 1.08em;
-            width: 232px;
-            font-weight: medium;
-        }
-    }
-
-
-    
+  }
 }
 
 .creators_title {
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.875em;
-    margin-bottom: 1.3em;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.875em;
+  margin-bottom: 1.3em;
 }
 
 .tips {
-    padding: 2.5em 0;
+  padding: 2.5em 0;
 
-    .cards {
-        display: flex;
-        justify-content: space-between;
-    }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .card {
-        width: 15.625em;
-        height: 15.625em;
-        background: #F9F9F9;
-        border-radius: 0.9em;
-        display: flex;
-        flex-direction: column;
-        padding: 2em 1.375em;
-    }
+  .card {
+    width: 15.625em;
+    height: 15.625em;
+    background: #f9f9f9;
+    border-radius: 0.9em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.375em;
+  }
 
-    .card_img {
-        margin: 0 auto 1em;
-    }
+  .card_img {
+    margin: 0 auto 1em;
+  }
 
-    .card_title {
-        color: $blue;
-        margin-bottom: 0.5em;
-    }
+  .card_title {
+    color: $blue;
+    margin-bottom: 0.5em;
+  }
 
-    .card_description {
-        color: #BDBDBD;
-    }
+  .card_description {
+    color: #bdbdbd;
+  }
 }
-
 
 .tarif_plans {
-    padding-bottom: 1.8em;
-    background: #fff;
+  padding-bottom: 1.8em;
+  background: #fff;
 
-    .top {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.875em;
-    }
-
-    .tarif_title {
-        margin-right: 0.8em;
-        color: $black;
-        font-size: 1.875em;
-    }
-
-    .date_title {
-        color: $purple;
-        margin-right: 0.8em;
-        font-size: 1.1em;
-    }
-
-    svg {
-        cursor: pointer;
-    }
-
-    .cards {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .card {
-        text-align: center;
-    }
-    .tarif_duraction {
-        color: $purple;
-        margin-top: 0.5em;
-        font-size: 1.25em;
-    }
-    .card_cont {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1.875em 1em;
-        background: $purple;
-        width: 16em;
-        text-align: center;
-        border-radius: 12px;
-    }
-
-    .card_title {
-        color: #fff;
-        font-weight: 500;
-        font-size: 1.4em;
-        margin-bottom: 6px;
-    }
-
-    .card_desc {
-        color: #fff;
-        font-weight: 400;
-        font-size: 0.70em;
-        margin-bottom: 1em;
-    }
-
-    .card_btn {
-        background: #FEF05E;
-        border: none;
-        border-radius: 12px;
-        color: #3A1679;
-        font-weight: 700;
-        width: 100%;
-        padding: 0.5em 0;
-        margin-bottom: 1em;
-    }
-
-    .cost_title {
-        color: #fff;
-        margin-bottom: 0.5em;
-        font-weight: 500;
-    }
-
-    .cost_btn {
-        border: none;
-        color: #3A1679;
-        background: #fff;
-        border-radius: 12px;
-        font-weight: bold;
-        padding: 0.5em 0;
-        width: 100%;
-    }
-}
-
-
-
-.not_full {
-    background-color: $yellow;
-    padding: 1.875em 0 0.5em;
-}
-
-.not_full_title {
-    font-weight: 500;
-    font-size: 1.875em;
-    color: #fff;
-}
-
-.row {
+  .top {
     display: flex;
     align-items: center;
+    margin-bottom: 1.875em;
+  }
 
-    .line {
-        width: 2em;
-        height: 0.5em;
-        background: #fff;
-        border-radius: 12px;
-        margin: 0 2em;
-    }
+  .tarif_title {
+    margin-right: 0.8em;
+    color: $black;
+    font-size: 1.875em;
+  }
 
-    .arrow {
-        margin-top: 70px;
-    }
-}
+  .date_title {
+    color: $purple;
+    margin-right: 0.8em;
+    font-size: 1.1em;
+  }
 
-.balance {
-    background: #FFFFFF;
-    border-radius: 12px;
+  svg {
+    cursor: pointer;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    text-align: center;
+  }
+  .tarif_duraction {
+    color: $purple;
+    margin-top: 0.5em;
+    font-size: 1.25em;
+  }
+  .card_cont {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em 2em 0.5em;
+    padding: 1.875em 1em;
+    background: $purple;
+    width: 16em;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .card_title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 6px;
+  }
+
+  .card_desc {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.7em;
+    margin-bottom: 1em;
+  }
+
+  .card_btn {
+    background: #fef05e;
+    border: none;
+    border-radius: 12px;
+    color: #3a1679;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+  }
+
+  .cost_title {
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+
+  .cost_btn {
+    border: none;
+    color: #3a1679;
+    background: #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 0.5em 0;
+    width: 100%;
+  }
+}
+
+.not_full {
+  background-color: $yellow;
+  padding: 1.875em 0 0.5em;
+}
+
+.not_full_title {
+  font-weight: 500;
+  font-size: 1.875em;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+  .line {
+    width: 2em;
+    height: 0.5em;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 2em;
+  }
+
+  .arrow {
+    margin-top: 70px;
+  }
+}
+
+.balance {
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2em 0.5em;
+  width: 9em;
+
+  .balance_title {
+    color: #fff;
+    text-align: center;
     width: 9em;
+    background: $yellow;
+    margin-bottom: 0.5em;
+  }
 
-    .balance_title {
-        color: #fff;
-        text-align: center;
-        width: 9em;
-        background: $yellow;
-        margin-bottom: 0.5em;
-    }
-
-    .balance_money {
-        font-size: 1.1em;
-        color: $yellow;
-    }
+  .balance_money {
+    font-size: 1.1em;
+    color: $yellow;
+  }
 }
 
 .next_balance {
-    text-align: center;
+  text-align: center;
 
-    .count {
-        color: #fff;
-        font-size: 3.75em;
-    }
+  .count {
+    color: #fff;
+    font-size: 3.75em;
+  }
 
-    .next_text {
-        font-size: 0.9em;
-        color: #fff;
-    }
+  .next_text {
+    font-size: 0.9em;
+    color: #fff;
+  }
 }
 
 .feed_back {
-    background: $purple;
-    padding-top: 1.875em;
-    padding-bottom: 3.5em;
+  background: $purple;
+  padding-top: 1.875em;
+  padding-bottom: 3.5em;
 
-    .cont {
-        display: flex;
-        flex-direction: column;
-    }
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .cards {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 1.9em;
-    }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.9em;
+  }
 
-    .card {
-        background: #B766D6;
-        padding: 1.25em;
-        width: 30%;
-    }
+  .card {
+    background: #b766d6;
+    padding: 1.25em;
+    width: 30%;
+  }
 
-    .top {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.6em;
-    }
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+  }
 
-    .card_title {
-        color: #fff;
-        font-size: 1.25em;
-        font-weight: 500;
-        margin-right: 0.3em;
-    }
+  .card_title {
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-right: 0.3em;
+  }
 
-    .stars {
-        svg:not(:last-child) {
-            margin-right: 2px;
-        }
+  .stars {
+    svg:not(:last-child) {
+      margin-right: 2px;
     }
+  }
 
-    .card_desc {
-        font-size: 0.95em;
-        color: #fff;
-        font-weight: 100;
-    }
+  .card_desc {
+    font-size: 0.95em;
+    color: #fff;
+    font-weight: 100;
+  }
 
-    .btn {
-        background: #C877E7;
-        border-radius: 12px;
-        font-weight: bold;
-        color: #fff;
-        border: none;
-        margin: 0 auto;
-        padding: 0.5em 2.5em;
-        cursor: pointer;
-    }
+  .btn {
+    background: #c877e7;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    padding: 0.5em 2.5em;
+    cursor: pointer;
+  }
 }
 
 .feed_back_title {
-    font-size: 1.875em;
-    color: #fff;
-    font-weight: 500;
-    margin-bottom: 2.91em;
-}
-
-.footer {
-    background: $blue;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-    padding-top: 1.875em;
-    padding-bottom: 2.5em;
-
-    .cont {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .column {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logo {
-        color: #fff;
-    }
-
-    .column_title {
-        color: #fff;
-        margin-bottom: 1.2em;
-        font-weight: 600;
-    }
-
-    .column_link {
-        font-weight: 100;
-        color: #fff;
-    }
-
-    .column_link:not(:last-child) {
-        margin-bottom: 1.2em;
-    }
+  font-size: 1.875em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2.91em;
 }

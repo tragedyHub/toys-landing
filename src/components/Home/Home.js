@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.scss";
+import Footer from "../Footer/Footer"
 import main_cont_image from "../../images/main_cont.png";
 import creator_logo from "../../images/creator_logo.png";
 import truck from "../../images/truck.png";
@@ -64,6 +65,7 @@ const Home = () => {
                 </svg>
               </div>
             </header>
+            
             <div className="offer">
               <img src={main_cont_image} className="image" />
               <h1 className="offer_title">
@@ -230,47 +232,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="footer">
-        <div className="container">
-          <div className="cont">
-            <div className="logo">LogoType</div>
-            <div className="column">
-              <h1 className="column_title">О нас</h1>
-              <a href="#" className="column_link">
-                Как пользоваться
-              </a>
-              <a href="#" className="column_link">
-                Отзывы
-              </a>
-              <a href="#" className="column_link">
-                Блог
-              </a>
-            </div>
-            <div className="column">
-              <h1 className="column_title">Используй Tidi</h1>
-              <a href="#" className="column_link">
-                Каталог
-              </a>
-              <a href="#" className="column_link">
-                Тарифы
-              </a>
-            </div>
-
-            <div className="column">
-              <h1 className="column_title">Полезная информация</h1>
-              <a href="#" className="column_link">
-                Соглашения
-              </a>
-              <a href="#" className="column_link">
-                Контакты
-              </a>
-              <a href="#" className="column_link">
-                FAQ + базе знаний
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
