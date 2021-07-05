@@ -16,9 +16,9 @@ const Footer = () => {
               <a href="#" className="column_link">
                 Отзывы
               </a>
-              <a href="#" className="column_link">
+              <NavLink to="/blog" className="column_link">
                 Блог
-              </a>
+              </NavLink>
             </div>
             <div className="column">
               <h1 className="column_title">Используй Tidi</h1>
