@@ -5,6 +5,7 @@ import Blog from './components/Blog/Blog'
 import Catalog from './components/Catalog/Catalog'
 import Home from "./components/Home/Home"
 import ToyPage from './components/ToyPage/ToyPage'
+import Tarifs from './components/Tarifs/Tarifs'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/catalog/item" exact render={() => <ToyPage />}></Route>
         <Route path="/blog" exact render={() => <Blog />}></Route>
         <Route path="/blog/article" exact render={() => <Article />}></Route>
+        <Route path="/tarifs" exact render={() => <Tarifs />}></Route>
       </Switch>
     </div>
   )

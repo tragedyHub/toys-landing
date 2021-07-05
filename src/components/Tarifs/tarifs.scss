@@ -1,0 +1,94 @@
+$blue: #75e1d2;
+$black: #333;
+$yellow: #f2c94c;
+$purple: #bb6bd9;
+
+.tarifs_page {
+  .main_cont {
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+    
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .tarifs_items_list {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .card {
+    text-align: center;
+  }
+  .tarif_duraction {
+    color: #fff;
+    margin-top: 0.5em;
+    font-size: 1.25em;
+    font-weight: 500;
+  }
+  .card_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875em 1em 1em;
+    background: $purple;
+    width: 16em;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .card_title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 6px;
+  }
+
+  .card_desc {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.7em;
+    margin-bottom: 1em;
+  }
+
+  .cost_row {
+    background: $yellow;
+    border: none;
+    border-radius: 12px;
+    color: #3a1679;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+  }
+
+  .cost_title {
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+
+  .card_btn {
+    border: none;
+    color: #fff;
+    background: $blue;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 0.5em 0;
+    width: 100%;
+    margin-top: 1em;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}
+
+.tarifs_page_title {
+  margin-top: 2em;
+  color: $black;
+  font-size: 1.41em;
+}

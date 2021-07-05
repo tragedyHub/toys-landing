@@ -25,9 +25,9 @@ const Footer = () => {
               <NavLink to="/catalog" className="column_link">
                 Каталог
               </NavLink>
-              <a href="#" className="column_link">
+              <NavLink to="/tarifs" className="column_link">
                 Тарифы
-              </a>
+              </NavLink>
             </div>
 
             <div className="column">
