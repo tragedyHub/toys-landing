@@ -6,6 +6,9 @@ import Catalog from './components/Catalog/Catalog'
 import Home from "./components/Home/Home"
 import ToyPage from './components/ToyPage/ToyPage'
 import Tarifs from './components/Tarifs/Tarifs'
+import Registration from './components/Registration/Registration'
+import Login from './components/Login/Login'
+import Order from './components/Order/Order'
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
         <Route path="/blog" exact render={() => <Blog />}></Route>
         <Route path="/blog/article" exact render={() => <Article />}></Route>
         <Route path="/tarifs" exact render={() => <Tarifs />}></Route>
+        <Route path="/register" exact render={() => <Registration />}></Route>
+        <Route path="/login" exact render={() => <Login />}></Route>
+        <Route path="/order" exact render={() => <Order />}></Route>
       </Switch>
     </div>
   )
