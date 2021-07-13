@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/toys-landing/static/css/main.8206cab6.chunk.css",
+    "main.js": "/toys-landing/static/js/main.3e2c542f.chunk.js",
+    "main.js.map": "/toys-landing/static/js/main.3e2c542f.chunk.js.map",
+    "runtime-main.js": "/toys-landing/static/js/runtime-main.2cd96b3f.js",
+    "runtime-main.js.map": "/toys-landing/static/js/runtime-main.2cd96b3f.js.map",
+    "static/js/2.4c60afd2.chunk.js": "/toys-landing/static/js/2.4c60afd2.chunk.js",
+    "static/js/2.4c60afd2.chunk.js.map": "/toys-landing/static/js/2.4c60afd2.chunk.js.map",
+    "static/js/3.6274be8f.chunk.js": "/toys-landing/static/js/3.6274be8f.chunk.js",
+    "static/js/3.6274be8f.chunk.js.map": "/toys-landing/static/js/3.6274be8f.chunk.js.map",
+    "index.html": "/toys-landing/index.html",
+    "static/css/main.8206cab6.chunk.css.map": "/toys-landing/static/css/main.8206cab6.chunk.css.map",
+    "static/js/2.4c60afd2.chunk.js.LICENSE.txt": "/toys-landing/static/js/2.4c60afd2.chunk.js.LICENSE.txt",
+    "static/media/home.scss": "/toys-landing/static/media/TTHoves-Regular.22badb64.ttf",
+    "static/media/article_image1.d0452aa1.png": "/toys-landing/static/media/article_image1.d0452aa1.png",
+    "static/media/article_image2.8a99f93e.png": "/toys-landing/static/media/article_image2.8a99f93e.png",
+    "static/media/article_image3.a973a400.png": "/toys-landing/static/media/article_image3.a973a400.png",
+    "static/media/header_logo.42494a1b.svg": "/toys-landing/static/media/header_logo.42494a1b.svg",
+    "static/media/how_image1.3f98080f.svg": "/toys-landing/static/media/how_image1.3f98080f.svg",
+    "static/media/how_image3.2df740e4.svg": "/toys-landing/static/media/how_image3.2df740e4.svg",
+    "static/media/how_image5.96bf9b8d.svg": "/toys-landing/static/media/how_image5.96bf9b8d.svg",
+    "static/media/instagram_icon.2f04bcba.svg": "/toys-landing/static/media/instagram_icon.2f04bcba.svg",
+    "static/media/catalog.scss": "/toys-landing/static/media/mark_image.227716f4.png",
+    "static/media/main_cont.8c2ccc04.png": "/toys-landing/static/media/main_cont.8c2ccc04.png",
+    "static/media/tips_img1.c7d4d962.svg": "/toys-landing/static/media/tips_img1.c7d4d962.svg",
+    "static/media/tips_img2.51f84331.svg": "/toys-landing/static/media/tips_img2.51f84331.svg",
+    "static/media/tips_img3.d0380daf.svg": "/toys-landing/static/media/tips_img3.d0380daf.svg",
+    "static/media/twitter_icon.bf1ba073.svg": "/toys-landing/static/media/twitter_icon.bf1ba073.svg",
+    "static/media/types_img1.cc12970e.png": "/toys-landing/static/media/types_img1.cc12970e.png",
+    "static/media/types_img2.5fd58ec8.png": "/toys-landing/static/media/types_img2.5fd58ec8.png",
+    "static/media/types_img3.76f0783a.png": "/toys-landing/static/media/types_img3.76f0783a.png",
+    "static/media/types_img4.9512af6a.png": "/toys-landing/static/media/types_img4.9512af6a.png",
+    "static/media/vk_icon.985c13c3.svg": "/toys-landing/static/media/vk_icon.985c13c3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2cd96b3f.js",
+    "static/js/2.4c60afd2.chunk.js",
+    "static/css/main.8206cab6.chunk.css",
+    "static/js/main.3e2c542f.chunk.js"
+  ]
+}
