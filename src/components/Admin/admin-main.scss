@@ -87,6 +87,9 @@ td {
     justify-content: space-between;
     .counters {
         margin-top: 46px;
+        @media screen and (max-width: 640px) {
+            display: none;
+        }
     }
     .counter {
         font-weight: 600;
