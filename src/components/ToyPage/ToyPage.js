@@ -3,12 +3,14 @@ import "./toy-page.scss";
 
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
 
 import itemLogo from "../../images/item_image.png";
 
 const ToyPage = () => {
   return (
     <div className="toy_page">
+      <Header />
       <div className="main_cont">
         <div className="container">
           <div className="cont">
@@ -17,40 +19,6 @@ const ToyPage = () => {
                 <img src={itemLogo} alt="item" className="toy_image" />
               </div>
               <div className="toy_desc_params">
-                <div className="toy_desc_help_row">
-                  <div className="help_row_back">
-                    <svg
-                      width="22"
-                      height="24"
-                      viewBox="0 0 22 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="help_row_back_arrow"
-                    >
-                      <path
-                        d="M21.0607 13.0607C21.6464 12.4749 21.6464 11.5251 21.0607 10.9393L11.5147 1.3934C10.9289 0.807611 9.97919 0.807611 9.3934 1.3934C8.80761 1.97919 8.80761 2.92893 9.3934 3.51472L17.8787 12L9.3934 20.4853C8.80761 21.0711 8.80761 22.0208 9.3934 22.6066C9.97919 23.1924 10.9289 23.1924 11.5147 22.6066L21.0607 13.0607ZM0 13.5H20V10.5H0V13.5Z"
-                        fill="#75E1D2"
-                      />
-                    </svg>
-                    <a href="#" className="help_row_link">
-                      Назад
-                    </a>
-                  </div>
-                  <svg
-                    width="60"
-                    height="50"
-                    viewBox="0 0 60 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="help_row_like"
-                  >
-                    <path
-                      className="help_row_like_path"
-                      d="M44.858 0C39.6848 0 35.1149 2.59712 32.384 6.55445C32.384 6.55445 31.4619 7.93433 29.9993 7.93433C28.5381 7.93433 27.616 6.55445 27.616 6.55445C24.8838 2.59712 20.3166 0 15.142 0C6.77874 0 0 6.77874 0 15.1446C0 17.12 0.388256 18.9996 1.07557 20.7297C5.31753 33.9016 24.2896 49.3872 29.9993 49.9526C35.7104 49.3872 54.6798 33.9016 58.9244 20.7297C59.6117 19.0009 60 17.12 60 15.1446C60 6.77874 53.2213 0 44.858 0Z"
-                      fill="#E0E0E0"
-                    />
-                  </svg>
-                </div>
                 <div className="toy_desc_params_content">
                   <h1 className="toy_content_title title">
                     Самолет игрушечный
@@ -219,27 +187,6 @@ const ToyPage = () => {
                 Вам может понравиться с этой игрушкой:
               </h1>
               <div className="another_offers_row">
-                <div className="another_offers_item">
-                  <div className="item_image"></div>
-                  <h1 className="item_name">Самолет игрушечный</h1>
-                  <p className="item_brand_name">Бренд</p>
-                  <p className="item_cost">18 Токенов</p>
-                  <NavLink to="/catalog/item" style={{ cursor: "pointer" }}>
-                    <button className="btn">Выбрать</button>
-                  </NavLink>
-                  <svg
-                    width="28"
-                    height="23"
-                    viewBox="0 0 28 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20.5175 0.760002C18.2206 0.760002 16.1916 1.91312 14.9791 3.67018C14.9791 3.67018 14.5697 4.28284 13.9203 4.28284C13.2715 4.28284 12.8621 3.67018 12.8621 3.67018C11.649 1.91312 9.62113 0.760002 7.32363 0.760002C3.61035 0.760002 0.600586 3.76976 0.600586 7.48421C0.600586 8.36128 0.772972 9.19584 1.07814 9.964C2.96157 15.8123 11.3852 22.6879 13.9203 22.9389C16.456 22.6879 24.8784 15.8123 26.763 9.964C27.0682 9.19642 27.2406 8.36128 27.2406 7.48421C27.2406 3.76976 24.2308 0.760002 20.5175 0.760002Z"
-                      fill="#E0E0E0"
-                    />
-                  </svg>
-                </div>
                 <div className="another_offers_item">
                   <div className="item_image"></div>
                   <h1 className="item_name">Самолет игрушечный</h1>

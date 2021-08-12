@@ -2,8 +2,12 @@ $blue: #75e1d2;
 $black: #333;
 $purple: #bb6bd9;
 .article {
+  @media screen and (max-width: 640px) {
+      margin-top: 60px;
+    }
   .main_cont {
     margin-top: 0.5em;
+    
   }
 }
 
@@ -62,6 +66,10 @@ $purple: #bb6bd9;
 
   .article_image {
     margin: 2.5em 0;
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      margin: 45px 0;
+    }
   }
 }
 .repost_article {
@@ -72,6 +80,10 @@ $purple: #bb6bd9;
         color: $blue;
         font-size: 1em;
         font-weight: 400;
+        @media screen and (max-width: 640px) {
+          color: #562E78;
+          font-weight: 600;
+        }
     }
     .repost_row {
         margin: 0 auto;

@@ -2,17 +2,20 @@ import React from 'react'
 import './footer.scss'
 import {NavLink} from "react-router-dom"
 
+import logo from "../../images/logo.svg"
+
 const Footer = () => {
     return (
         <footer className="footer">
         <div className="container">
           <div className="cont">
-            <div className="logo">LogoType</div>
+            <div className="logo_container"><img src={logo} alt="" className="logo"/></div>
+            
             <div className="column">
               <h1 className="column_title">О нас</h1>
-              <a href="#" className="column_link">
+              <NavLink to="/use" className="column_link">
                 Как пользоваться
-              </a>
+              </NavLink>
               <a href="#" className="column_link">
                 Отзывы
               </a>
@@ -29,7 +32,6 @@ const Footer = () => {
                 Тарифы
               </NavLink>
             </div>
-
             <div className="column">
               <h1 className="column_title">Полезная информация</h1>
               <a href="#" className="column_link">

@@ -10,50 +10,62 @@ const Blog = () => {
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
     {
       title: "Заголовок блока",
       text: "Keep inquisitive babies busy with this brilliant Melissa and Doug Jungle Activity Table. It’s suitable for children aged 12 months+ and has a jungle theme that’s alive with vibrant creatures and vivid patterns guaranteed to keep them entertained.",
+      date: "26.04.2021"
     },
   ];
 
@@ -71,6 +83,8 @@ const Blog = () => {
                     <h1 className="blog_list_item_title">{item.title}</h1>
                     <p className="blog_list_item_text">{item.text}</p>
                     <div className="blog_list_item_read_block">
+                      <h1 className="arcticle_date">26.04.2021</h1>
+                      <div style={{display: "flex", alignItems: "center"}}>
                       <NavLink className="blog_list_item_read_link" to="/blog/article">
                         Читать
                       </NavLink>
@@ -86,6 +100,7 @@ const Blog = () => {
                           fill="#fff"
                         />
                       </svg>
+                      </div>
                     </div>
                   </div>
                 );

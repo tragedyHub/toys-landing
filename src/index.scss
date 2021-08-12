@@ -13,4 +13,13 @@
 .container {
   width: 1230px;
   margin: 0 auto;
+  @media screen and (max-width: 640px)  {
+    width: 548px;
+  }
+}
+.admin_title {
+  margin-top: 50px;
+  color: #333;
+  font-size: 35px;
+  margin-bottom: 25px;
 }

@@ -1,0 +1,313 @@
+.admin_nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.admin_nav_item {
+    padding: 16px 0;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #bdbdbd;
+    @media screen and (max-width: 640px) {
+        width: 100%;
+    }
+}
+.admin_nav_item.active {
+    background: #66cccc;
+    color: #fff;
+}
+@media screen and (max-width: 640px) {
+    .admin_main_nav_item:nth-child(n + 2) {
+        margin-top: 156px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .admin_nav_item:not(:last-child) {
+        margin-right: 55px;
+    }
+}
+
+tr {
+    text-align: left;
+    width: 100%;
+}
+th {
+    font-size: 18px;
+}
+td,
+th {
+    padding: 0 15px;
+}
+th {
+    a {
+        font-size: 14px;
+        font-weight: 100;
+    }
+}
+td {
+    font-size: 12px;
+    font-weight: 600;
+    color: #393939;
+}
+
+.main_tbody {
+    margin-top: 25px;
+    .blue {
+        color: #66cccc;
+    }
+    .main_tbody_tr {
+        height: 65px;
+    }
+}
+@media screen and (min-width: 640px) {
+    .admin_main_table {
+        height: auto;
+        width: 99.7%;
+    }
+    .admin_main_adaptive_table {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .admin_main_table {
+        display: none;
+    }
+    .admin_main_adaptive_table {
+        display: block;
+    }
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    .counters {
+        margin-top: 46px;
+    }
+    .counter {
+        font-weight: 600;
+        color: #66cccc;
+        font-size: 18px;
+    }
+    .counter:nth-child(n+2) {
+        margin-top: 45px;
+    }
+}
+
+.admin_main_nav_table {
+    margin-bottom: 26px;
+    margin-left: 40px;
+    @media screen and (max-width: 640px) {
+        margin: 0 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.admin_main_nav_item {
+    color: #bdbdbd;
+    font-size: 27px;
+    &.active {
+        color: #66cccc;
+        font-weight: 600;
+    }
+    &:not(:last-child) {
+        margin-right: 71px;
+    }
+    @media screen and (max-width: 640px) {
+        margin: 0 0 !important;
+    }
+}
+.admin_main_search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 512px;
+    height: 60px;
+    margin-bottom: 36px;
+    margin-left: 40px;
+    @media screen and (max-width: 640px) {
+        margin: 0 0 45px;
+        width: 100%;
+    }
+    input {
+        background: #f9f9f9;
+        opacity: 0.75;
+        box-shadow: 0px 0px 5.9781px rgba(0, 0, 0, 0.07);
+        border-radius: 9.92288px;
+        border: none;
+        outline: none;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+    }
+    input::placeholder {
+        color: #66cccc;
+        font-weight: 500;
+        opacity: 0.3;
+    }
+}
+
+.admin_main_adaptive_table {
+    flex-wrap: wrap;
+    .card_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card_content_label {
+        font-size: 16px;
+        color: #828282;
+    }
+    .card_content_text {
+        color: #66cccc;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .card_content_column_item {
+    }
+    .card_content_column_item:nth-child(n + 2) {
+        margin-top: 20px;
+    }
+    .card_number {
+        font-size: 22px;
+        color: #66cccc;
+        margin-bottom: 47px;
+        font-weight: 600;
+    }
+    .admin_main_adaptive_table_card:nth-child(n + 2) {
+        margin-top: 50px;
+    }
+    .admin_main_adaptive_table_card:last-child {
+        margin-bottom: 20px;
+    }
+}
+.card_content_button {
+    margin-top: 20px;
+    color: #66cccc;
+    font-size: 16px;
+    &.red {
+        color: #ff3333;
+    }
+}
+
+.admin_tokens {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .row {
+        display: flex;
+    }
+    .admin_tokens_card {
+        display: flex;
+        flex-direction: column;
+    }
+    .admin_tokens_card:not(:last-child) {
+        margin-right: 45px;
+    }
+    label {
+        margin-bottom: 20px;
+    }
+    input {
+        width: 250px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding-left: 25px;
+    }
+    input::placeholder {
+        color: #66cccc;
+        font-size: 24px;
+    }
+    .tokens_submit {
+        border: none;
+        color: #fff;
+        background: #6ccccc;
+        padding: 16px 0;
+        border-radius: 12px;
+        width: 282px;
+        cursor: pointer;
+        margin-top: 45px;
+    }
+}
+
+.admin_register {
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .row {
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start!important;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .admin_register_item {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 640px) {
+            &:nth-child(n+2) {
+                margin-top: 10px;
+            }
+        }
+    }
+    label {
+        margin-bottom: 10px;
+        margin-left: 45px;
+    }
+    input {
+        outline: none;
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 18px 0 18px 45px;
+        border: none;
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+    }
+    input::placeholder {
+        color: #bdbdbd;
+        font-size: 20px;
+    }
+    .mt {
+        margin-top: 10px;
+        @media screen and (max-width: 640px) {
+            margin-top: 0;
+        }
+    }
+    .mr {
+        margin-right: 45px;
+        @media screen and (max-width: 640px) {
+            margin-right: 0;
+        }
+    }
+    .admin_register_submit {
+        margin-left: auto;
+        padding: 21px 0;
+        width: 250px;
+        background: #66cccc;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 12px;
+        cursor: pointer;
+        @media screen and (max-width: 640px) {
+            margin: 30px auto 0;
+        }
+    }
+}

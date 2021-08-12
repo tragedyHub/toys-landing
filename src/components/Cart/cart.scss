@@ -1,0 +1,32 @@
+.cart_navbar {
+    margin-top: 45px;
+    display: flex;
+    height: auto;
+}
+.cart_navbar_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease;
+    height: 50px;
+    border-radius: 12px;
+    &:not(:last-child) {
+        margin-right: 45px;
+    }
+    &:hover {
+        background: #66cccc;
+        .cart_navbar_link {
+            color: #fff;
+        }
+    }
+}
+
+.cart_navbar_link {
+    line-height: 33px;
+    color: #e0e0e0;
+    font-size: 28px;
+    padding: 0 45px;
+}
+.cart_table {
+    
+}

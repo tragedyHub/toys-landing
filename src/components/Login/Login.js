@@ -3,6 +3,7 @@ import "./login.scss";
 import Header from "../Header/Header";
 
 import {NavLink} from "react-router-dom"
+import Footer from "../Footer/Footer";
 
 const Login = () => {
   return (
@@ -34,6 +35,7 @@ const Login = () => {
         <button className="submit_btn">Войти</button>
         <a className="recovery_acc" href="#">Забыли пароль?</a>
       </form>
+      <Footer />
     </div>
   );
 };
